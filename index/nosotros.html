@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Beauty D’Luxe - Sobre Nosotros</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+   body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('imagenes/imagen01.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #3a3a3a;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 100vh; /* asegura que el body ocupe toda la altura */
+}
+
+
+
+
+    /* Header Volver */
+    header {
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+    .nav-back a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #f9f8f6;
+      text-decoration: none;
+      border: 2px solid #b3916f;
+      padding: 0.4rem 1rem;
+      border-radius: 30px;
+      transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+      user-select: none;
+    }
+    .nav-back a:hover,
+    .nav-back a:focus {
+      background-color: #b3916f;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(179, 145, 111, 0.6);
+      outline: none;
+    }
+    .nav-back .icon {
+      font-size: 1.3rem;
+      line-height: 1;
+    }
+
+    /* Sección principal */
+    section {
+      background: #fffffff4;
+      padding: 2.5rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 0.05);
+      animation: fadeInUp 0.8s ease forwards;
+      margin-bottom: 3rem;
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Títulos */
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #b3916f;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-top: 2rem;
+    }
+
+    /* Contenido dividido */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    /* En pantallas chicas, una columna */
+    @media (max-width: 768px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Texto */
+    .text-block {
+      font-size: 1.1rem;
+      color: #4a4a4a;
+      line-height: 1.7;
+    }
+
+    /* Imágenes */
+    .image-block img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgb(0 0 0 / 0.07);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .image-block img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgb(0 0 0 / 0.12);
+    }
+
+    /* Sub-sección "¿Qué nos hace diferentes?" */
+    .diferentes {
+      margin-top: 3rem;
+      background: #f4eee6;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: inset 0 0 10px rgb(179 145 111 / 0.15);
+    }
+    .diferentes p {
+      font-size: 1.1rem;
+      color: #5a4b32;
+      max-width: 700px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav-back">
+      <a href="index.html" aria-label="Volver a la página de inicio">
+        <span class="icon">&#8592;</span> Inicio
+      </a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Sobre Beauty D’Luxe</h1>
+    <div class="content-grid">
+      <div class="text-block">
+        <p>
+          En <strong>Beauty D’Luxe</strong>, fusionamos elegancia, innovación y cuidado profesional para ofrecer experiencias únicas en estética avanzada.
+          Nuestro equipo está comprometido con tu bienestar, aplicando técnicas modernas y productos de alta calidad para resaltar tu belleza natural.
+          En nuestro centro en Valencia encontrarás un espacio tranquilo, seguro y adaptado a ti.
+        </p>
+      </div>
+      <div class="image-block">
+        <img src="imagenes/imagen32.jpg" alt="Interior elegante de Beauty D’Luxe" />
+      </div>
+    </div>
+
+    <div class="content-grid" style="margin-top:3rem;">
+      <div class="image-block">
+        <img src="imagenes/CLAUDIA_BEAUTY D LUXE_05.jpg" alt="Sala de tratamiento en Beauty D’Luxe" />
+      </div>
+      <div class="text-block">
+        <p>
+          Nuestro local está diseñado con un estilo minimalista y elegante, pensado para ofrecerte la máxima comodidad y relajación durante tu visita.
+          Cada detalle, desde la iluminación suave hasta los materiales naturales, contribuye a crear un ambiente armonioso y acogedor.
+        </p>
+      </div>
+    </div>
+
+   <div class="diferentes">
+  <h2>¿Qué nos hace diferentes?</h2>
+  <div class="content-grid">
+    <div class="text-block">
+      <p>
+        En <strong>Beauty D’Luxe</strong> valoramos tu tiempo, por eso puedes realizar hasta <strong>3 servicios en un solo atendimiento</strong>, optimizando tu experiencia sin perder calidad.
+        Nuestro equipo profesional y atento te garantiza resultados excepcionales en cada visita, adaptándonos a tus necesidades y preferencias personales.
+      </p>
+    </div>
+    <div class="image-block">
+      <img src="imagenes/CLAUDIA_BEAUTY D LUXE_12.jpg" alt="Lo que nos hace diferentes en Beauty D’Luxe" />
+    </div>
+  </div>
+</div>
+
+  </section>
+
+  <!-- Nueva sección Filosofía -->
+  <section>
+    <h2>Nuestra Filosofía</h2>
+    <div class="content-grid">
+      <div class="text-block">
+        <p>
+          En Beauty D’Luxe creemos que la belleza nace de la armonía entre cuerpo, mente y espíritu.
+          Por eso, diseñamos tratamientos que no solo mejoran la apariencia, sino que también promueven el bienestar integral.
+        </p>
+        <p>
+          Usamos productos naturales y tecnologías avanzadas para cuidar tu piel con el máximo respeto y eficacia.
+        </p>
+      </div>
+      <div class="image-block">
+        <img src="imagenes/Cosmetology Facial Treatment Rejuvenation and Skincare Therapy.jpg" alt="Productos naturales y tecnología en Beauty D’Luxe" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Nueva sección Tecnología -->
+  <section>
+    <h2>Tecnología de Vanguardia</h2>
+    <div class="content-grid">
+      <div class="image-block">
+        <img src="imagenes/Microdermabrasion Cost_ How to Get Your Best Skin Yet.jpg" alt="Equipos tecnológicos para tratamientos estéticos" />
+      </div>
+      <div class="text-block">
+        <p>
+          Incorporamos los últimos avances tecnológicos para ofrecerte tratamientos más efectivos y cómodos.
+          Nuestro equipo utiliza dispositivos de alta precisión que garantizan resultados visibles y duraderos.
+        </p>
+        <p>
+          La seguridad y la innovación son pilares fundamentales en cada procedimiento que realizamos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+
+
